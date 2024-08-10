@@ -28,6 +28,10 @@ jobs:
         push: false
         tags: splayer:latest
 
+    - name: 列出所有 Docker 镜像
+      run: docker images
+
+
     - name: 保存 Docker 镜像到文件
       run: docker save -o splayer_image.tar splayer:latest
 
