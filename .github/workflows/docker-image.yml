@@ -23,8 +23,8 @@ jobs:
     - name: 构建 Docker 镜像
       uses: docker/build-push-action@v5
       with:
-        context: ./TuneFree  # 使用相对路径，指向 Dockerfile 所在的目录
-        file: ./TuneFree/Dockerfile  # 指定 Dockerfile 的路径
+        context: .  # 根目录为上下文
+        file: ./Dockerfile  # Dockerfile 的路
         push: false
         tags: splayer:latest
         load: true  # 加载镜像到本地缓存，以便后续步骤使用
