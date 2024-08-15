@@ -27,7 +27,7 @@ export const getSongDetail = (ids) => {
 export const getSongUrl = (id, level = "hires") => {
   return axios({
     method: "GET",
-    url: "https://csm.sayqz.com/api/?type=apiSongUrlV1",
+    url: "http://192.168.5.16:3000/?type=apiSongUrlV1",
     params: {
       id,
       level
